@@ -1,7 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-cl">
+<header>
+    <style>
+        body {
+            color: antiquewhite;
+            background-color: #0f0f0f;
+            font-size: 20px;
+        }
+        table {
+            text-align: center;
+            background-color: #0f0f0f;
+            margin: 0px auto;
+            border: 2px solid #141414;
+            border-collapse: collapse;
+        }
+        tr, td {
+            border: 2px solid #141414;
+            border-collapse: collapse;
+        }
+        .columna {
+            float: left;
+        }
+        .izquierda {
+            width: 20%;
+            text-align: left;
+        }
+        .derecha {
+            width: 20%;
+            text-align: right;
+        }
+        .centro {
+            width: 60%;
+            text-align: center;
+            background-color: #141414;
+        }
+        .fila:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            text-align: right;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        @media screen and (max-width: 600px) {
+            .izquierda, .derecha {
+                visibility: hidden;
+                display: none;
+                clear: both;
+            }
+            .centro {
+                width: 100%;
+            }
+        }
+    </style>
+</header>
 <body>
-<h1>Hola mundo</h1>
-<p>Mi página en GitHub Pages.</p>
+    <div class="fila">
+        <div class="columna izquierda">❤</div>
+        <div class="columna centro">
+            <h1>Bienvenido a mi página</h1>
+            <table>
+                <tr>
+                    <td><img src="Docs/yerko.png" height="300"></td>
+                    <td>
+                        <p>Soy <strong>YerkoAndrei</strong>, desarrollador de videojuegos, programador backend, administrador de bases de datos y un montón de otras cosas.</p>
+                        <p>Entusiasta y colaborador de código abierto.</p>
+                        <p>.NET C# SQL Unity Stride WPF Avalonia</p>
+                        <p>Visual Studio DBeaver Blender Krita</p>
+                        <p>Miembro de <a href="https://umbrastudio2024.github.io">Umbra Studio</a></p>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Visita mi <a href="https://github.com/YerkoAndrei">Github</a></h2>
+            <a href="https://github.com/YerkoAndrei"><img src="Docs/github-mark-white.png" height="100"></a>
+            <p><br></p>
+
+            <h3>Mis proyectos personales:</h3>
+            <table style="width: 80%;" border="1px">
+                <tr>
+                    <td colspan="2" style="text-align: center;"><strong>Videojuegos</strong></td>
+                </tr>
+                <tr>
+                    <td><img height="100" src="https://github.com/YerkoAndrei/SennalLocal/raw/main/Assets/Texturas/%C3%8Dcono.png"></td>
+                    <td>Señal local es un juego narrativo con múltiples opciones y muchos finales. Ayuda al Usuario de la línea de emergencia a escapar del peligro en el que despertó. O guíale a descubrir la verdad del porqué perdió la memoria.</td>
+                </tr>
+                <tr>
+                    <td>Señal local</td>
+                    <td><a href="https://github.com/YerkoAndrei/SennalLocal">Código</a> y <a href="https://yerkoandrei.itch.io/local-signal">descarga</a> (Unity)</td>
+                </tr>
+                <tr style="height: 30px;"></tr>
+                <tr>
+                    <td><img height="100" src="https://camo.githubusercontent.com/ad7926d30404a14951f634e1460d7882c59c8dd9f6d4bc6b6592fe93d8954260/68747470733a2f2f696d672e697463682e7a6f6e652f6157316e4c7a45314d5463774e5449334c6e42755a773d3d2f6f726967696e616c2f37637178452532422e706e67"></td>
+                    <td>Terracota es un juego 1v1 de físicas en base a turnos, donde creas tus propias fortalezas y las pruebas en combate con tus habilidades con el cañón.</td>
+                </tr>
+                <tr>
+                    <td>Terracota</td>
+                    <td><a href="https://github.com/YerkoAndrei/Terracota">Código</a> y <a href="https://yerkoandrei.itch.io/terracota">descarga</a> (Stride)</td>
+                </tr>
+            </table>
+            <p><br></p>
+
+            <table style="width: 80%;">
+                <tr>
+                    <td colspan="2" style="text-align: center;"><strong>Utilidades</strong></td>
+                </tr>
+                <tr>
+                    <td><img height="100" src="https://github.com/YerkoAndrei/Choike/raw/ccfd2e85c7b23b45d42b8d23b7665ff930165802/Choike/Arte/SinCar%C3%A1tula.png"></td>
+                    <td>Choike es un reproductor de MP3 basado en carpetas, simple, rápido, de fondo oscuro, offline, y con algunas teclas personalizadas.</td>
+                </tr>
+                <tr>
+                    <td>Choike</td>
+                    <td><a href="https://github.com/YerkoAndrei/Choike">Código y descarga</a> (WPF)</td>
+                </tr>
+                <tr style="height: 30px;"></tr>
+                <tr>
+                    <td><img height="100" src="https://github.com/YerkoAndrei/NNuku/raw/main/NNuku.Android/Icon.png"></td>
+                    <td>Ñuku es un diario de notas simple y oscuro para android.</td>
+                </tr>
+                <tr>
+                    <td>Ñuku</td>
+                    <td><a href="https://github.com/YerkoAndrei/NNuku">Código y descarga</a> (Avalonia)</td>
+                </tr>
+            </table>
+            <p><br></p>
+
+            <h3>Mi creativo:</h3>
+            <table style="width: 60%; text-align: left;">
+                <tr>
+                    <td></td>
+                    <td><em>Desde los sueños.</em></td>
+                </tr>
+                <tr>
+                    <td>Videojuegos</td>
+                    <td><a href="https://yerkoandrei.itch.io/">Itch.io/YerkoAndrei</a></td>
+                </tr>
+                <tr>
+                    <td>Código</td>
+                    <td><a href="https://github.com/YerkoAndrei">Github/YerkoAndrei</a></td>
+                </tr><tr>
+                    <td>Cuentos de terror</td>
+                    <td><a href="https://www.wattpad.com/user/YerkoAndrei">Wattpad/YerkoAndrei</a></td>
+                </tr>
+                <tr>
+                    <td>Ilustraciones</td>
+                    <td><a href="https://www.artstation.com/yerkoandrei">Artstation/YerkoAndrei</a></td>
+                </tr>
+            </table>
+            <p><br></p>
+
+            <h3>Contacto:</h3>
+            <table style="width: 40%;">
+                <tr>
+                    <td colspan="2" style="text-align: center;"><strong>Yerko Andrei Orellana Abello</strong></td>
+                </tr>
+                <tr>
+                    <td>Correo</td>
+                    <td><a href="mailto:yerkoandrei@gmail.com">yerkoandrei@gmail.com</a></td>
+                </tr>
+            </table>
+            <p><br></p>
+        </div>
+        <div class="columna derecha">❤</div>
+    </div>
+  <footer>
+    <a>Yerko Andrei <script>document.write(/\d{4}/.exec(Date())[0])</script> &nbsp;</a>
+  </footer>
 </body>
 </html>
