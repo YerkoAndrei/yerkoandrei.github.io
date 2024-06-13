@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es-cl">
-<header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="YerkoAndrei">
+    <meta name="description" content="Portafolio">
+    <meta name="keywords" content="YerkoAndrei, Yerko Andrei Orellana Abello, Portafolio, GameDev, Chile"> 
+    <link rel="shortcut icon" type="image/x-icon" href="Docs/tresMundos.png">
+    <title>Yerko Andrei</title>
+
     <style>
         body {
             color: antiquewhite;
@@ -34,16 +43,19 @@
             text-align: center;
             background-color: #141414;
         }
+        .foto {
+            height: 300px;
+            width: 300px;
+        }
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         .fila:after {
             content: "";
             display: table;
             clear: both;
-        }
-        footer {
-            text-align: right;
-            position: fixed;
-            bottom: 0;
-            right: 0;
         }
         @media screen and (max-width: 600px) {
             .izquierda, .derecha {
@@ -51,20 +63,24 @@
                 display: none;
                 clear: both;
             }
+            .foto {
+                height: 100px;
+                width: 100px;
+            }
             .centro {
                 width: 100%;
             }
         }
     </style>
-</header>
+</head>
 <body>
     <div class="fila">
         <div class="columna izquierda">❤</div>
         <div class="columna centro">
-            <h1>Bienvenido a mi página</h1>
+            <h1>Bienvenidos a mi página</h1>
             <table>
                 <tr>
-                    <td><img src="Docs/yerko.png" height="300"></td>
+                    <td><div class="foto"><img src="Docs/yerko.png" alt="Foto"/></div></td>
                     <td>
                         <p>Soy <strong>YerkoAndrei</strong>, desarrollador de videojuegos, programador backend, administrador de bases de datos y un montón de otras cosas.</p>
                         <p>Entusiasta y colaborador de código abierto.</p>
@@ -80,12 +96,12 @@
             <p><br></p>
 
             <h3>Mis proyectos personales:</h3>
-            <table style="width: 80%;" border="1px">
+            <table style="width: 80%;">
                 <tr>
                     <td colspan="2" style="text-align: center;"><strong>Videojuegos</strong></td>
                 </tr>
                 <tr>
-                    <td><img height="100" src="https://github.com/YerkoAndrei/SennalLocal/raw/main/Assets/Texturas/%C3%8Dcono.png"></td>
+                    <td><img height="100" width="100" src="https://github.com/YerkoAndrei/SennalLocal/raw/main/Assets/Texturas/%C3%8Dcono.png"></td>
                     <td>Señal local es un juego narrativo con múltiples opciones y muchos finales. Ayuda al Usuario de la línea de emergencia a escapar del peligro en el que despertó. O guíale a descubrir la verdad del porqué perdió la memoria.</td>
                 </tr>
                 <tr>
@@ -94,7 +110,7 @@
                 </tr>
                 <tr style="height: 30px;"></tr>
                 <tr>
-                    <td><img height="100" src="https://camo.githubusercontent.com/ad7926d30404a14951f634e1460d7882c59c8dd9f6d4bc6b6592fe93d8954260/68747470733a2f2f696d672e697463682e7a6f6e652f6157316e4c7a45314d5463774e5449334c6e42755a773d3d2f6f726967696e616c2f37637178452532422e706e67"></td>
+                    <td><img height="100" width="100" src="https://camo.githubusercontent.com/ad7926d30404a14951f634e1460d7882c59c8dd9f6d4bc6b6592fe93d8954260/68747470733a2f2f696d672e697463682e7a6f6e652f6157316e4c7a45314d5463774e5449334c6e42755a773d3d2f6f726967696e616c2f37637178452532422e706e67"></td>
                     <td>Terracota es un juego 1v1 de físicas en base a turnos, donde creas tus propias fortalezas y las pruebas en combate con tus habilidades con el cañón.</td>
                 </tr>
                 <tr>
@@ -109,7 +125,7 @@
                     <td colspan="2" style="text-align: center;"><strong>Utilidades</strong></td>
                 </tr>
                 <tr>
-                    <td><img height="100" src="https://github.com/YerkoAndrei/Choike/raw/ccfd2e85c7b23b45d42b8d23b7665ff930165802/Choike/Arte/SinCar%C3%A1tula.png"></td>
+                    <td><img height="100" width="100" src="https://github.com/YerkoAndrei/Choike/raw/ccfd2e85c7b23b45d42b8d23b7665ff930165802/Choike/Arte/SinCar%C3%A1tula.png"></td>
                     <td>Choike es un reproductor de MP3 basado en carpetas, simple, rápido, de fondo oscuro, offline, y con algunas teclas personalizadas.</td>
                 </tr>
                 <tr>
@@ -118,7 +134,7 @@
                 </tr>
                 <tr style="height: 30px;"></tr>
                 <tr>
-                    <td><img height="100" src="https://github.com/YerkoAndrei/NNuku/raw/main/NNuku.Android/Icon.png"></td>
+                    <td><img height="100" width="100" src="https://github.com/YerkoAndrei/NNuku/raw/main/NNuku.Android/Icon.png"></td>
                     <td>Ñuku es un diario de notas simple y oscuro para android.</td>
                 </tr>
                 <tr>
@@ -162,12 +178,13 @@
                     <td><a href="mailto:yerkoandrei@gmail.com">yerkoandrei@gmail.com</a></td>
                 </tr>
             </table>
+
+            <img src="Docs/tresMundos.png" height="300" width="300">
+            <br>
+            <a>YerkoAndrei <script>document.write(/\d{4}/.exec(Date())[0])</script></a>
             <p><br></p>
         </div>
         <div class="columna derecha">❤</div>
     </div>
-  <footer>
-    <a>YerkoAndrei <script>document.write(/\d{4}/.exec(Date())[0])</script> &nbsp;</a>
-  </footer>
 </body>
 </html>
